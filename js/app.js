@@ -33,11 +33,12 @@ window.addEventListener("click", (e) => {
     if (e.target.matches(".btn-agregar-producto")){
         /*
             Lo que guardo en cardActual es una referencia.
-            Básicamente cuando click en el botón 'Agregar' de
+            Básicamente cuando hago click en el botón 'Agregar' de
             alguna de las cards, me guardo la referencia del
             <div class="card"> en cual hice click.
 
-            Es libre de investigar más acerca de parentNode
+            Es libre de investigar más acerca de 
+            - parentNode
         */
         const cardActual = e.target.parentNode.parentNode;
         /*
@@ -45,6 +46,9 @@ window.addEventListener("click", (e) => {
             que tiene un SVG y un texto que le indica al
             usuario que se agregó un producto de ese
             tipo al carrito
+
+            Es libre de investigar más acerca de:
+            - nextElementSibling
         */
         const divAgregado = e.target.nextElementSibling;
         /*
@@ -52,7 +56,8 @@ window.addEventListener("click", (e) => {
             desaparecer el "¡Agregado!" al agregar un
             producto del tipo seleccionado
 
-            Es libre de investigar más acerca de setTimeOut
+            Es libre de investigar más acerca de:
+            - setTimeOut()
         */
         divAgregado.style.opacity = 1;
         setTimeout(() => {
