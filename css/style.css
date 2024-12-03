@@ -1,0 +1,55 @@
+:root{
+    --card-size: 24em;
+}
+
+.card{
+    width: var(--card-size);
+    height: auto;
+    padding: 15px;
+    border: 1px solid rgb(180, 180, 180);
+    border-radius: 8px;
+}
+.card-header,
+.card-body{
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+}
+.card-header{
+    border-bottom: 1px solid rgb(180, 180, 180);
+}
+
+.card-footer{
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.card-body-image{
+    display: flex;
+    justify-content: center;
+}
+
+.card-body-image > img{
+    width: var(--card-size) - 1em;
+    height: 20em;
+}
+
+.text-green-custom-1{
+    color: rgb(25, 135, 57);
+}
+
+.added{
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.producto{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(180, 180, 180);
+    padding-bottom: 1em;
+}
+
+.tiny-image{
+    width: 4em;
+}
